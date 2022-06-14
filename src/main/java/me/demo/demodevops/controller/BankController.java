@@ -25,6 +25,11 @@ public class BankController {
   @Autowired
   private BankService bankService;
 
+  @GetMapping("/healthCheck")
+  public String healthCheck() {
+    return "Ok";
+  }
+
   @PostMapping("/accounts")
   public ResponseEntity makeAccount(@RequestBody Bank bank) {
     return ResponseEntity.ok(bankService.makeAccount(bank));
