@@ -31,6 +31,7 @@ on:
     branches:
       - "master"
 
+
 env:
   AWS_REGION: ap-northeast-2b                   # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: demo-devops           # set this to your Amazon ECR repository name
